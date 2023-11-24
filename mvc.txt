@@ -1,0 +1,14 @@
+Spring MVC :
+
+is a java framework that is used to develop web applications. it built on a model-view-controller pattern
+and posseses all the basic feature of spring framework , such as dependancy injections,inversion of control.
+
+are used to control how information is represented internally versus how it is presented to the user.
+
+model : the data and its related business logic(db entities,files..)
+view : the visualization of the data.
+controller : the connection or bridge between model and view, handling user request and response.
+ 
+link for all spring related topics 
+https://docs.spring.io/spring-framework/docs/4.0.x/spring-framework-reference/html/
+

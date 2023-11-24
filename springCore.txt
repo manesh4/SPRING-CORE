@@ -1,0 +1,171 @@
+What is Spring?
+spring is a dependancy injection framework to make java application loosely coupled.
+spring framework makes the easy developement of javaEE application.
+it was developed by Rod Johnson in 2003.
+
+Dependancy Ijection 
+it is design paatern
+
+Inversion of Control(IOC)
+
+class Sample
+{
+	Demo dm;
+	public void doWork()
+			{
+
+		}
+}
+
+class Demo
+{
+	public void doWork()
+			{
+
+		}
+}
+
+
+
+Spring and JEE
+
+UI Layer---------------> ProductController
+   |
+Service Layer -----------------> ProductService
+   |
+Data Access layer -----------------> ProductDao
+   |                                     |
+Database <--------------------------------
+
+
+Spring Modules 
+
+Data Access/Integration  ----------------->      JDBC    ORM		Web            Servlet
+						 JMS     OXM            Portlet        WebSocket  ---------->  web
+						
+						AOP      Aspect         Instrumentation   messaging
+
+
+Spring Core ------------------------------->   Core      beans          Context       spEL
+								test
+
+
+Application Context ------> 1.ClasspathXMLApplicationContext 2.AnnotationConfig 3.FileSystemXML
+
+			
+Dependancy Injection
+
+class Student
+{
+	int id;
+	String name;
+	Address address;
+}
+
+class Address
+{
+	String street;
+	String city;
+	String state;
+	String country;
+}
+
+it can be done in 2 ways.
+1. using setter injection'
+2. using constructor injection
+
+
+using setter
+
+class Student
+{
+	id,name,address;
+	setid(id){}
+	setName(name){}
+	setAddress(address){}
+}
+
+class Address
+{
+	String street;
+	String city;
+	String state;
+	String country;
+}
+
+
+using constructor
+
+class Student
+{
+	String id,name,address;
+	Student(id,name,address)
+		{
+			}
+}
+
+class Address
+{
+	String street;
+	String city;
+	String state;
+	String country;
+	Address(street,city,state,country)
+	{}
+} 
+
+Software :
+
+1---->  Eclipse/netbeans/intellij
+2----> TomcatServer
+3----> MySql
+
+
+1. Create Maveen Project
+2. Adding dependancy---> spring core, spring context
+3. creating beans-java 
+4. creating config file --> config.xml
+5. setter injection
+6. Main class : which can be pull the object and use.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
